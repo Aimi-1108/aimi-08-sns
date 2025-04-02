@@ -1,0 +1,17 @@
+.container
+  %span.image
+    = image_tag src="/assets/Rectangle.png"
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      .input-group
+        %label{for: "username"} Account 
+        = f.text_field :username, class: "input-field"
+      .input-group
+        %label{for: "email"} Email
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "input-field"
+      .input-group
+        %label{for: "password"} Password
+        = f.password_field :password, autocomplete: "new-password", class: "input-field"
+      .actions
+        = f.submit "CREATE ACCOUNT", class: "submit-btn"
+    = render "devise/shared/links"
