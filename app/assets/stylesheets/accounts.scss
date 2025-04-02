@@ -1,0 +1,8 @@
+.avatar {
+    border-radius: 50%;  // これで画像が丸くなります
+    width: 76.875px;         // 必要に応じて画像のサイズを指定
+    height: 76.875px;        // 必要に応じて画像のサイズを指定
+    object-fit: cover;     
+    margin-left: 140px;
+    margin-top: 20px;
+}
