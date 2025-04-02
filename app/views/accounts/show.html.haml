@@ -1,11 +1,11 @@
 .accounts-container
   = link_to current_user.username, edit_user_registration_path, class: "user-name" 
 
-<!-- プロフィール画像 -->
-%img{src: "enhypen.jpg", id: "profile-image", alt: "Profile Image", style: "cursor: pointer;", class: "avatar"}
+  / プロフィール画像
+  = image_tag "enhypen.jpg", id: "profile-image", alt: "Profile Image", style: "cursor: pointer;", class: "avatar"
 
-<!-- 非表示のファイル入力 -->
-%input{type: "file", id: "file-input", style: "display: none;"}
+  / 非表示のファイル入力
+  %input{type: "file", id: "file-input", style: "display: none;"}
 
 :javascript
   // 画像をクリックしたらファイル入力をクリック
