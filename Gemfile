@@ -37,6 +37,7 @@ gem "jbuilder"
 
 gem 'devise'
 gem 'erb2haml'
+gem 'haml-rails'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
@@ -69,3 +70,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "sassc", "~> 2.4"
