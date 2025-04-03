@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root to: 'articles#index'
 
   resources :accounts, only: [:show]
+  resources :articles, only: [:show, :index]
 
   # Defines the root path route ("/")
   # root "posts#index"

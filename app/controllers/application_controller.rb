@@ -17,4 +17,4 @@ class ApplicationController < ActionController::Base
       # サインイン時にusernameを許可
       devise_parameter_sanitizer.permit :sign_in, keys: added_attrs
     end
-  end
+end
